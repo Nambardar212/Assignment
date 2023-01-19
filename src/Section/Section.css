@@ -1,0 +1,38 @@
+.sectionFrist {
+    width: 100%;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+}
+
+.sectionFrist img {
+        width: 100%;
+}
+
+.section2font {
+    display: flex;
+    width: 100%;
+    padding: 3% 12%;
+    justify-content: space-between;
+}
+
+.who-are {
+    width: 80%;
+}
+
+b {
+    font-weight: bold;
+}
+
+.sectionpra {
+    display: flex;
+    padding-top: 8px;
+    width: 80%;
+}
+
+.imagewho {
+    width: 100%;
+    padding-bottom: 30px;
+}

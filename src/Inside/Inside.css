@@ -1,0 +1,37 @@
+.where {
+    background-color: #a04472;
+    padding: 3% 12%;
+    width: 100%;
+    color: wheat;
+}
+
+.section2image, .where {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.sectionsecondimage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
