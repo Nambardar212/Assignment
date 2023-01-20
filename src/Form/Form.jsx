@@ -1,30 +1,41 @@
 import React from 'react';
 import { useState } from 'react';
-import { useAlert } from 'react-alert';
 import "./Form.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Form = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
-    const alert = useAlert();
+
+    const toastOptions = {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "dark"
+    };
 
     const SubmitHandler = (e) => {
         e.preventDefault();
         if (name === "") {
-            alert.error("Please Enter Name")
+            toast.error("Please Enter Name", toastOptions);
         }
         else if (email === "") {
-            alert.error("Please Enter Email")
+            toast.error("Please Enter Email", toastOptions);
         }
         else if (phone === "") {
-            alert.error("Please Enter Phone Number")
+            toast.error("Please Enter Phone Number", toastOptions);
         }
         else if (phone.length !== 10) {
-            alert.error("Enter valid Phone Number")
+            toast.error("Enter valid Phone Number", toastOptions);
         }
         else {
-            alert.success("Successfully Register")
+            console.log("success");
+            toast.success("Successfully Register", toastOptions);
         }
     }
 
@@ -85,7 +96,9 @@ const Form = () => {
                         </form>
                     </div>
                 </div>
+
             </div>
+            <ToastContainer />
         </>
     );
 }
